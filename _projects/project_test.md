@@ -1,8 +1,10 @@
 ---
-title: "My Awesome Project"
+layout: project
+title: "project_test"
 excerpt: "A brief description of the project"
-header: header
-
+header: "header"
+categories: [projects]
+tags: [example, project]
 ---
 
 Your project description goes here. You can use **Markdown** formatting.
