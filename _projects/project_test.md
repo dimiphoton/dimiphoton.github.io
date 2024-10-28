@@ -1,7 +1,7 @@
 ---
 title: "My Awesome Project"
 excerpt: "A brief description of the project"
-header:
+header: header
 
 ---
 
