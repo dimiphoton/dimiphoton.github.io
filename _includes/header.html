@@ -1,0 +1,16 @@
+<nav>
+    <ul>
+      {% for link in site.data.navigation.main %}
+        <li>
+          <a href="{{ link.url | relative_url }}">{{ link.title }}</a>
+          {% if link.sublinks %}
+            <ul>
+              {% for sublink in link.sublinks %}
+                <li><a href="{{ sublink.url | relative_url }}">{{ sublink.title }}</a></li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
