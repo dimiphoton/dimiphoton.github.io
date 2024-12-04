@@ -1,12 +1,12 @@
 ---
 layout: project
-title: "project_test"
-excerpt: "A brief description of the project"
-header: "header"
+title: "Project Test"
+excerpt: "A brief description of the project."
 categories: [projects]
 tags: [example, project]
+header:
+  teaser: /assets/images/project-test-teaser.jpg
 ---
-
 Your project description goes here. You can use **Markdown** formatting.
 
 ## Features
