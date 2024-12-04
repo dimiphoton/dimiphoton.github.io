@@ -310,9 +310,15 @@ compress_html:
     envs: development
 
 collections:
-  projects:
-    output: true
   posts:
+    output: true
+  projects_learning:
+    output: true
+  projects_kaggle:
+    output: true
+  projects_quick:
+    output: true
+  projects_products:
     output: true
 
 # Defaults
