@@ -2,8 +2,7 @@
 layout: project
 title: "My Easy Projects"
 excerpt: "A collection of my easy projects."
-categories: [projects_learning]
-permalink: /projects_learning/
+categories: [projects]
 ---
 
 This section contains my easy projects. You can use **Markdown** formatting to describe each project.
