@@ -325,17 +325,10 @@ navigation:
 
 
 collections:
-  posts:
+  projects:
     output: true
     permalink: /projects/:title/
-#  projects_learning:
-#    output: true
-#  projects_kaggle:
-#    output: true
-#  projects_quick:
-#    output: true
-#  projects_products:
-#    output: true
+
 
 # Defaults
 defaults:
