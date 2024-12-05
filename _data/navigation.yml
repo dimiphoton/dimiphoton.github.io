@@ -1,7 +1,7 @@
 main:
   - title: "Home"
     url: "/"  
-  - title: "my product projects"
+  - title: "my projects"
     url: "/projects/"
   - title: "Blog"
     url: "/blog/"
