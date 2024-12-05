@@ -1,7 +1,11 @@
 ---
 layout: page
-title: "Projects"
+title: "My Projects"
 permalink: /projects/
 ---
 
-Here are some of our projects.
+Here are some of my projects:
+
+{% for project in site.projects %}
+- [{{ project.title }}]({{ project.url }})
+{% endfor %}
