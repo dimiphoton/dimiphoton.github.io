@@ -1,0 +1,11 @@
+---
+layout: archive
+title: "Categories"
+---
+
+<h2>All Categories</h2>
+<ul>
+  {% for category in site.categories %}
+    <li><a href="/categories/{{ category[0] }}/">{{ category[0] }}</a> ({{ category[1].size }})</li>
+  {% endfor %}
+</ul>
