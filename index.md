@@ -1,7 +1,6 @@
 ---
 layout: home
-title: "Home"
-permalink: /
+author_profile: true
 ---
 
-Welcome to the home page.
+Welcome to my personal website! Here you'll find my blog posts, projects, and more.
