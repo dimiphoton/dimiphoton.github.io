@@ -4,16 +4,18 @@ main:
   - title: "Projects"
     url: /projects/
     children:
-      - title: "Machine Learning"
-        url: /categories/machine-learning/
-      - title: "Geospatial Analysis"
+      - title: "Data Science"
+        url: /categories/data-science/
+      - title: "Web Development"
+        url: /categories/web-development/
+      - title: "Geospatial"
         url: /categories/geospatial/
       - title: "MLOps"
         url: /categories/mlops/
-      - title: "Visualization"
-        url: /categories/visualization/
-      - title: "All Projects"
-        url: /projects/
+      - title: "AI Agents"
+        url: /categories/ai-agents/
+      - title: "Optimization"
+        url: /categories/optimization/
   - title: "Blog"
     url: /blog/
     children:

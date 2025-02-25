@@ -1,5 +1,5 @@
 ---
-title: "MLOps"
+title: "MLOps Projects"
 layout: category
 permalink: /categories/mlops/
 taxonomy: MLOps
@@ -8,4 +8,4 @@ sidebar:
   nav: "projects"
 ---
 
-Projects and articles about Machine Learning operationalization, model deployment, and DevOps best practices. 
+Projects focused on machine learning operations, deployment pipelines, and model monitoring systems. 

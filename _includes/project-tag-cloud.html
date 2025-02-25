@@ -1,0 +1,45 @@
+{% assign project_tags = site.projects | map: "tags" | join: "," | split: "," | uniq | sort %}
+
+<div class="project-tag-cloud">
+  <!-- Development Stage -->
+  <div class="tag-section">
+    <h4>Development Stage</h4>
+    <div class="tag-group stage-tags">
+      {% for tag in project_tags %}
+        {% if tag == "notebook" or tag == "prototype" or tag == "MVP" or tag == "app" %}
+          <span class="tag-item stage-tag">
+            <a href="/tags/{{ tag | slugify }}/">{{ tag }}</a>
+          </span>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+  <!-- Project Type -->
+  <div class="tag-section">
+    <h4>Project Type</h4>
+    <div class="tag-group type-tags">
+      {% for tag in project_tags %}
+        {% if tag == "exercise" or tag == "little experiment" or tag == "solo project" %}
+          <span class="tag-item type-tag">
+            <a href="/tags/{{ tag | slugify }}/">{{ tag }}</a>
+          </span>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+  <!-- Technologies -->
+  <div class="tag-section">
+    <h4>Technologies</h4>
+    <div class="tag-group tech-tags">
+      {% for tag in project_tags %}
+        {% unless tag == "notebook" or tag == "prototype" or tag == "MVP" or tag == "app" or tag == "exercise" or tag == "little experiment" or tag == "solo project" %}
+          <span class="tag-item tech-tag">
+            <a href="/tags/{{ tag | slugify }}/">{{ tag }}</a>
+          </span>
+        {% endunless %}
+      {% endfor %}
+    </div>
+  </div>
+</div> 

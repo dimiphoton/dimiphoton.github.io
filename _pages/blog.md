@@ -1,17 +1,18 @@
 ---
 title: "Blog"
-layout: collection
+layout: posts
 permalink: /blog/
-collection: posts
-entries_layout: grid
-classes: wide
 author_profile: true
-sidebar:
-  nav: "blog"
 ---
 
-Welcome to my blog! Here you'll find:
+Welcome to my blog! Here you'll find articles about:
 
-- **Daily Reads**: Tech watch and quick analyses
-- **Opinions**: Thoughts on data science and tech
-- **Tutorials**: Practical guides and training 
+- Data Science and Machine Learning
+- Web Development
+- Geospatial Analysis
+- MLOps and Best Practices
+- Tutorials and Guides
+
+## Latest Posts
+
+[Posts will be automatically listed below] 

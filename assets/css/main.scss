@@ -78,3 +78,98 @@ search: false
     }
   }
 }
+
+/* Project Tag Cloud */
+.project-tag-cloud {
+  margin: 2em 0;
+  padding: 1.5em;
+  background: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+
+  .tag-section {
+    margin-bottom: 1.5em;
+
+    h4 {
+      margin-bottom: 0.5em;
+      color: #2c3e50;
+      font-size: 1.1em;
+      font-weight: 600;
+    }
+
+    .tag-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5em;
+    }
+  }
+
+  .tag-item {
+    display: inline-block;
+    padding: 0.3em 0.8em;
+    border-radius: 15px;
+    font-size: 0.9em;
+    transition: all 0.2s ease;
+    
+    a {
+      color: inherit;
+      text-decoration: none;
+      
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+
+  /* Stage Tags */
+  .stage-tag {
+    background: #e3f2fd;
+    color: #1976d2;
+    border: 1px solid #bbdefb;
+    
+    &:hover {
+      background: #bbdefb;
+    }
+  }
+
+  /* Type Tags */
+  .type-tag {
+    background: #f3e5f5;
+    color: #7b1fa2;
+    border: 1px solid #e1bee7;
+    
+    &:hover {
+      background: #e1bee7;
+    }
+  }
+
+  /* Tech Tags */
+  .tech-tag {
+    background: #e8f5e9;
+    color: #388e3c;
+    border: 1px solid #c8e6c9;
+    
+    &:hover {
+      background: #c8e6c9;
+    }
+  }
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .project-tag-cloud {
+    padding: 1em;
+    
+    .tag-section {
+      margin-bottom: 1em;
+    }
+    
+    .tag-item {
+      font-size: 0.8em;
+    }
+  }
+}

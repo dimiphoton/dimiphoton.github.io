@@ -1,5 +1,5 @@
 ---
-title: "Geospatial Analysis"
+title: "Geospatial Projects"
 layout: category
 permalink: /categories/geospatial/
 taxonomy: Geospatial
@@ -8,4 +8,4 @@ sidebar:
   nav: "projects"
 ---
 
-Projects focused on geospatial data analysis and visualization. 
+Projects involving geographic information systems, spatial analysis, and mapping applications. 
