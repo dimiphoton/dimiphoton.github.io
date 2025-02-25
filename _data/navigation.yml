@@ -19,16 +19,37 @@ main:
   - title: "Blog"
     url: /blog/
     children:
-      - title: "Daily Reads"
-        url: /categories/daily-reads/
-      - title: "Opinions"
-        url: /categories/opinions/
-      - title: "Tutorials"
-        url: /categories/tutorials/
+      - title: "Project Ideas"
+        url: /categories/project-ideas/
+      - title: "Book Presentations"
+        url: /categories/book-presentations/
+      - title: "Tutorial Reviews"
+        url: /categories/tutorial-read/
       - title: "All Posts"
         url: /blog/
   - title: "About"
     url: /about/
   - title: "Contact"
     url: /contact/
+  
+# Add blog sidebar navigation
+blog_sidebar:
+  - title: "Categories"
+    children:
+      - title: "Project Ideas"
+        url: /categories/project-ideas/
+      - title: "Book Presentations"
+        url: /categories/book-presentations/
+      - title: "Tutorial Reviews"
+        url: /categories/tutorial-read/
+  - title: "By Topic"
+    children:
+      - title: "Machine Learning"
+        url: /tags/machine-learning/
+      - title: "Data Science"
+        url: /tags/data-science/
+      - title: "Web Development"
+        url: /tags/web-development/
+      - title: "MLOps"
+        url: /tags/mlops/
   
