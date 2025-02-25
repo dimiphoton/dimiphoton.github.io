@@ -7,3 +7,74 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+/* Tag Cloud */
+.tag-cloud {
+  margin: 2em 0;
+  padding: 1em;
+  background: #f3f6f6;
+  border-radius: 5px;
+  
+  .tag-item {
+    display: inline-block;
+    margin: 0.3em;
+    padding: 0.2em 0.5em;
+    background: #fff;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      background: #4a4a4a;
+      a { color: #fff; }
+    }
+    
+    .tag-count {
+      font-size: 0.8em;
+      color: #666;
+    }
+  }
+}
+
+/* Grid Layout Enhancements */
+.grid__item {
+  .archive__item-teaser {
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+  
+  .archive__item-title {
+    margin-top: 0.5em;
+    font-size: 1.1em;
+    font-weight: 600;
+  }
+  
+  .archive__item-excerpt {
+    margin-top: 0.5em;
+    font-size: 0.9em;
+    color: #666;
+  }
+}
+
+/* Category and Tag Pages */
+.taxonomy__section {
+  margin-bottom: 3em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #f2f3f3;
+}
+
+/* Sidebar Navigation */
+.nav__list {
+  .nav__items {
+    font-size: 0.9em;
+    
+    .nav__sub-title {
+      font-weight: bold;
+      margin-top: 1em;
+    }
+  }
+}

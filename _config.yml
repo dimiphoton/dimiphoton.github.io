@@ -314,9 +314,12 @@ compress_html:
 
 # Collections
 collections:
+  posts:
+    output: true
+    permalink: /:categories/:title/
   projects:
     output: true
-    permalink: /:collection/:path/
+    permalink: /projects/:title/
 
 # Defaults
 defaults:
@@ -331,6 +334,9 @@ defaults:
       comments: true
       share: true
       related: true
+      show_date: true
+      sidebar:
+        nav: "blog"
   # _projects
   - scope:
       path: ""
@@ -339,5 +345,22 @@ defaults:
       layout: single
       author_profile: true
       share: true
-      related: true
-      classes: wide
+      sidebar:
+        nav: "projects"
+
+# Sidebar Configurations
+after_footer_scripts:
+  - /assets/js/sidebar.js
+
+# Additional Settings
+tag_archive:
+  type: liquid
+  path: /tags/
+category_archive:
+  type: liquid
+  path: /categories/
+
+# Grid Settings
+entries_layout: grid
+classes:
+  - wide

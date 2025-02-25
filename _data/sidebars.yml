@@ -1,8 +1,5 @@
-main:
-  - title: "Home"
-    url: /
-  - title: "Projects"
-    url: /projects/
+projects:
+  - title: "Categories"
     children:
       - title: "Machine Learning"
         url: /categories/machine-learning/
@@ -12,10 +9,17 @@ main:
         url: /categories/mlops/
       - title: "Visualization"
         url: /categories/visualization/
-      - title: "All Projects"
-        url: /projects/
-  - title: "Blog"
-    url: /blog/
+  - title: "By Level"
+    children:
+      - title: "Beginner"
+        url: /tags/beginner/
+      - title: "Intermediate"
+        url: /tags/intermediate/
+      - title: "Advanced"
+        url: /tags/advanced/
+
+blog:
+  - title: "Categories"
     children:
       - title: "Daily Reads"
         url: /categories/daily-reads/
@@ -23,10 +27,9 @@ main:
         url: /categories/opinions/
       - title: "Tutorials"
         url: /categories/tutorials/
-      - title: "All Posts"
-        url: /blog/
-  - title: "About"
-    url: /about/
-  - title: "Contact"
-    url: /contact/
-  
+  - title: "Archives"
+    children:
+      - title: "By Year"
+        url: /posts/
+      - title: "By Tag"
+        url: /tags/ 

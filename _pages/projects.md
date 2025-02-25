@@ -6,6 +6,15 @@ collection: projects
 entries_layout: grid
 classes: wide
 author_profile: true
+sidebar:
+  nav: "projects"
 ---
 
-Welcome to my projects page. Here you'll find various projects I've worked on. 
+Explore my projects in data science, machine learning, and geospatial analysis. Use the categories to filter by domain expertise.
+
+## Main Domains
+
+- **Machine Learning**: Predictive models and classification
+- **Geospatial Analysis**: Spatial data processing
+- **MLOps**: Production deployment
+- **Visualization**: Data storytelling and dashboards 

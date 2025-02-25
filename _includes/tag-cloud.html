@@ -1,0 +1,9 @@
+{% assign tags = site.tags | sort %}
+<div class="tag-cloud">
+  {% for tag in tags %}
+    <span class="tag-item" style="font-size: {{ tag[1].size | times: 20 | plus: 80 }}%">
+      <a href="/tags/{{ tag[0] | slugify }}/">{{ tag[0] }}</a>
+      <span class="tag-count">({{ tag[1].size }})</span>
+    </span>
+  {% endfor %}
+</div> 
