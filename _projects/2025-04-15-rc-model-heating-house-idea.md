@@ -9,6 +9,7 @@ tags:
   - Python
   - RC model
   - goal:notebook
+project_id: rc-model-heating
 ---
 
 I'm starting a new personal project to build an RC (resistor-capacitor) thermal model of a house heating system.
