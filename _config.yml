@@ -352,13 +352,7 @@ defaults:
 after_footer_scripts:
   - /assets/js/sidebar.js
 
-# Additional Settings
-tag_archive:
-  type: liquid
-  path: /tags/
-category_archive:
-  type: liquid
-  path: /categories/
+
 
 # Grid Settings
 entries_layout: grid
