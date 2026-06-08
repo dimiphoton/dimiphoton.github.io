@@ -30,8 +30,4 @@ Welcome to my portfolio and blog. Here you'll find projects in data science, web
   {% endfor %}
 </div>
 
-<p>
-  <a href="{{ '/blog/' | relative_url }}">Blog</a> ·
-  <a href="{{ '/reading/' | relative_url }}">Reading</a> ·
-  <a href="{{ '/progress/' | relative_url }}">Progress</a>
-</p>
+<p><a href="{{ '/writing/' | relative_url }}">All writing →</a></p>

@@ -1,55 +1,36 @@
 ---
-title: "Project Portfolio"
-layout: splash
+title: "Projects"
+layout: single
 permalink: /projects/
-author_profile: false
-classes:
-  - landing
-header:
-  overlay_color: "#000"
-  overlay_filter: "0.5"
-  overlay_image: /assets/images/projects-header.jpg
-  actions:
-    - label: "View All Projects"
-      url: "#recent-projects"
-  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
-excerpt: "Exploring Data Science, ML, and Development through practical projects"
-
-feature_row:
-  - image_path: /assets/images/datascience-thumb.jpg
-    alt: "Data Science"
-    title: "Data Science"
-    excerpt: "Machine learning, analytics, and data visualization projects"
-    url: "/categories/data-science/"
-    btn_label: "View Projects"
-    btn_class: "btn--primary"
-  - image_path: /assets/images/geospatial-thumb.jpg
-    alt: "Geospatial"
-    title: "Geospatial"
-    excerpt: "GIS analysis and spatial data processing"
-    url: "/categories/geospatial/"
-    btn_label: "View Projects"
-    btn_class: "btn--primary"
-  - image_path: /assets/images/mlops-thumb.jpg
-    alt: "MLOps"
-    title: "MLOps"
-    excerpt: "Machine learning operations and deployment"
-    url: "/categories/mlops/"
-    btn_label: "View Projects"
-    btn_class: "btn--primary"
+author_profile: true
 ---
 
-{% include feature_row %}
+# Projects
 
-<div class="project-tags-section">
-  <h2>Browse by Tags</h2>
-  {% include project-tag-cloud.html %}
-</div>
+Portfolio of practical work in data science, machine learning, and development.
 
-<div id="recent-projects" class="recent-projects">
-  <h2>Recent Projects</h2>
-  <div class="grid__wrapper">
-    {% assign projects = site.projects | sort: 'title' | reverse %}
-    {% include documents-collection.html entries=projects type="grid" %}
-  </div>
-</div> 
+## By domain
+
+- [Data Science]({{ "/categories/data-science/" | relative_url }})
+- [Geospatial]({{ "/categories/geospatial/" | relative_url }})
+- [MLOps]({{ "/categories/mlops/" | relative_url }})
+- [Web Development]({{ "/categories/web-development/" | relative_url }})
+- [AI Agents]({{ "/categories/ai-agents/" | relative_url }})
+- [Optimization]({{ "/categories/optimization/" | relative_url }})
+
+## All projects
+
+{% assign projects = site.projects | sort: 'title' %}
+{% if projects.size > 0 %}
+  {% include documents-collection.html entries=projects type="list" %}
+{% else %}
+  <p><em>No projects yet.</em></p>
+{% endif %}
+
+## Browse by taxonomy
+
+{% include project-tag-cloud.html %}
+
+## Progress
+
+Track goals and milestones on the [progress dashboard]({{ "/progress/" | relative_url }}).
