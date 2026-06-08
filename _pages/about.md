@@ -5,8 +5,6 @@ permalink: /about/
 author_profile: true
 ---
 
-# About Me
-
 I'm a data scientist and developer passionate about creating solutions that combine machine learning, web development, and geospatial analysis.
 
 ## Skills & Expertise

@@ -5,8 +5,6 @@ permalink: /writing/
 author_profile: true
 ---
 
-# Writing
-
 Notes, reading summaries, and project progress journals.
 
 ## Sections
