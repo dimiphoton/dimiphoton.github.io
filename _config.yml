@@ -17,11 +17,11 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Your Site Title"
+title                    : "Dimi Photon"
 title_separator          : "-"
-subtitle                 : "Your Subtitle"
-name                     : "Your Name"
-description              : "Your site description."
+subtitle                 : "Data Science & Development"
+name                     : "Dimi Photon"
+description              : "Portfolio, projects and blog."
 url                      : "https://dimiphoton.github.io"
 baseurl                  : ""
 repository               : "dimiphoton/dimiphoton.github.io"
@@ -133,7 +133,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/yourusername"
+      url: "https://github.com/dimiphoton"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -149,7 +149,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/yourusername"
+      url: "https://github.com/dimiphoton"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -315,9 +315,6 @@ compress_html:
 
 # Collections
 collections:
-  posts:
-    output: true
-    permalink: /:categories/:title/
   projects:
     output: true
     permalink: /projects/:title/
@@ -348,12 +345,6 @@ defaults:
       share: true
       sidebar:
         nav: "projects"
-
-# Sidebar Configurations
-after_footer_scripts:
-  - /assets/js/sidebar.js
-
-
 
 # Grid Settings
 entries_layout: grid
