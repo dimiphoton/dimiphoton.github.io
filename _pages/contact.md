@@ -11,7 +11,7 @@ I'm always interested in new projects and collaborations. Feel free to reach out
 
 ## Connect With Me
 
-- **GitHub**: [Your GitHub Profile](https://github.com/yourusername)
+- **GitHub**: [dimiphoton](https://github.com/dimiphoton)
 - **LinkedIn**: [Your LinkedIn Profile](https://linkedin.com/in/yourusername)
 - **Twitter**: [Your Twitter Profile](https://twitter.com/yourusername)
 

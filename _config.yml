@@ -68,7 +68,7 @@ reCaptcha:
 atom_feed:
   path                   : # blank (default) uses feed.xml
   hide                   : # true, false (default)
-search                   : # true, false (default)
+search                   : true
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
 lunr:
@@ -113,24 +113,15 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Dimi Photon"
   avatar           : "/assets/images/bio-photo.jpg"
-  bio              : "Your brief biography."
-  location         : "Your Location"
+  bio              : "Data scientist and developer."
+  location         :
   email            :
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
+    - label: "CV"
+      icon: "fas fa-fw fa-file-pdf"
+      url: "/cv/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/dimiphoton"
@@ -313,11 +304,18 @@ compress_html:
     envs: development
 
 
+# Project taxonomy (front matter on _projects/ and progress _posts/)
+# domain:   data-science | geospatial | mlops | web-dev | ai-agents | optimization | energy-modeling
+# autonomy: exercise | little-experiment | solo-project
+# stage:    notebook | prototype | mvp | app
+# status:   goal | wip | done
+# project_id: slug linking hub pages to progress notes
+
 # Collections
 collections:
   projects:
     output: true
-    permalink: /projects/:title/
+    permalink: /projects/:name/
 
 # Defaults
 defaults:
@@ -329,12 +327,12 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: true
+      comments: false
       share: true
       related: true
       show_date: true
       sidebar:
-        nav: "blog"
+        nav: "writing"
   # _projects
   - scope:
       path: ""

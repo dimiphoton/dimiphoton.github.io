@@ -1,0 +1,28 @@
+{% assign pid = include.project_id | default: page.project_id %}
+{% if pid %}
+  {% assign timeline_posts = site.posts | where_exp: "post", "post.project_id == pid" | sort: 'date' %}
+{% else %}
+  {% assign timeline_posts = nil %}
+{% endif %}
+
+{% if timeline_posts and timeline_posts.size > 0 %}
+  <section class="project-timeline">
+    <h2>Progress timeline</h2>
+    <ul class="project-timeline__list">
+      {% for post in timeline_posts %}
+        <li class="project-timeline__item">
+          <span class="project-timeline__date">{{ post.date | date: "%B %d, %Y" }}</span>
+          {% if post.status %}
+            <span class="project-timeline__badge project-timeline__badge--{{ post.status }}">{{ post.status }}</span>
+          {% endif %}
+          {% if post.stage %}
+            <span class="project-timeline__badge project-timeline__badge--stage">{{ post.stage }}</span>
+          {% endif %}
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+{% else %}
+  <p><em>No progress notes yet.</em></p>
+{% endif %}

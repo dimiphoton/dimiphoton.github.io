@@ -1,50 +1,77 @@
 ---
-title: "Project Tag Guide"
+title: "Project Taxonomy Guide"
 layout: single
 permalink: /tag-guide/
 author_profile: true
+toc: true
 ---
 
-# Project Tag Guide
+# Project Taxonomy Guide
 
-This guide explains how projects are tagged across different dimensions:
+Projects and progress notes use structured front matter fields. Tags remain available for technologies and search.
 
-## Project Independence Level
-- `exercise`: Guided learning exercises
-- `little experiment`: Small independent explorations
-- `solo project`: Fully independent projects
+## Domain (`domain`)
 
-## Development Stage
-- `notebook`: Jupyter notebook analysis
-- `prototype`: Working proof of concept
-- `MVP`: Minimum viable product
-- `app`: Full application
+Technical or thematic area of the project:
 
-## Technologies & Domains
-### Languages & Frameworks
-- `python`
-- `javascript`
-- `pytorch`
-- `tensorflow`
-- `fastapi`
-- `react`
+- `data-science`
+- `geospatial`
+- `mlops`
+- `web-dev`
+- `ai-agents`
+- `optimization`
+- `energy-modeling`
 
-### Tools & Platforms
-- `QGIS`
-- `docker`
-- `kubernetes`
-- `aws`
-- `gcp`
+## Autonomy (`autonomy`)
 
-### Domains
-- `ETL`
-- `GIS`
-- `remote-sensing`
-- `llm`
-- `computer-vision`
-- `nlp`
+How independently the work was carried out:
 
-## Using Tags
-Projects typically combine tags from different categories to provide a complete picture of their scope and nature. For example:
-- A data science exercise might use: `exercise`, `notebook`, `python`, `pandas`
-- A full web application might use: `solo project`, `app`, `react`, `fastapi`, `docker` 
+- `exercise` — guided learning exercise
+- `little-experiment` — small independent exploration
+- `solo-project` — fully independent project
+
+## Production stage (`stage`)
+
+How far the project has been taken toward production:
+
+- `notebook` — Jupyter notebook analysis or exploration
+- `prototype` — working proof of concept
+- `mvp` — minimum viable product
+- `app` — deployed or production-ready application
+
+## Status (`status`)
+
+Current state of the project or progress note:
+
+- `goal` — planned, not yet started
+- `wip` — work in progress
+- `done` — completed at the current stage
+
+## Project link (`project_id`)
+
+A slug shared between the project hub in `_projects/` and progress notes in `_posts/`.
+
+Example: `project_id: rc-model-heating` links `/projects/rc-model-heating/` to all related progress notes.
+
+## Tags
+
+Use Jekyll tags for technologies and tools: `Python`, `QGIS`, `docker`, etc.
+
+## Example front matter
+
+```yaml
+---
+title: "RC Model for Home Heating"
+permalink: /projects/rc-model-heating/
+layout: single
+project_id: rc-model-heating
+domain: energy-modeling
+autonomy: solo-project
+stage: notebook
+status: goal
+featured: true
+tags:
+  - Python
+  - RC model
+---
+```

@@ -1,0 +1,96 @@
+{% assign progress_posts = site.posts | where_exp: "p", "p.categories contains 'progress'" %}
+{% assign goal_projects = site.projects | where: "status", "goal" %}
+{% assign wip_projects = site.projects | where: "status", "wip" %}
+{% assign done_projects = site.projects | where: "status", "done" %}
+{% assign goal_posts = progress_posts | where: "status", "goal" %}
+{% assign wip_posts = progress_posts | where: "status", "wip" %}
+{% assign done_posts = progress_posts | where: "status", "done" %}
+
+<div class="progress-dashboard">
+  <div class="progress-dashboard__column">
+    <h2>Goals</h2>
+    {% if goal_projects.size > 0 %}
+      <h3>Projects</h3>
+      <ul>
+        {% for project in goal_projects %}
+          <li>
+            <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+            {% if project.stage %}<span class="progress-dashboard__badge">{{ project.stage }}</span>{% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+    {% if goal_posts.size > 0 %}
+      <h3>Recent notes</h3>
+      <ul>
+        {% for post in goal_posts %}
+          <li>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            <span class="progress-dashboard__date">{{ post.date | date: "%b %d, %Y" }}</span>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+    {% if goal_projects.size == 0 and goal_posts.size == 0 %}
+      <p><em>Nothing planned yet.</em></p>
+    {% endif %}
+  </div>
+
+  <div class="progress-dashboard__column">
+    <h2>In progress</h2>
+    {% if wip_projects.size > 0 %}
+      <h3>Projects</h3>
+      <ul>
+        {% for project in wip_projects %}
+          <li>
+            <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+            {% if project.stage %}<span class="progress-dashboard__badge">{{ project.stage }}</span>{% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+    {% if wip_posts.size > 0 %}
+      <h3>Recent notes</h3>
+      <ul>
+        {% for post in wip_posts %}
+          <li>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            <span class="progress-dashboard__date">{{ post.date | date: "%b %d, %Y" }}</span>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+    {% if wip_projects.size == 0 and wip_posts.size == 0 %}
+      <p><em>Nothing in progress yet.</em></p>
+    {% endif %}
+  </div>
+
+  <div class="progress-dashboard__column">
+    <h2>Done</h2>
+    {% if done_projects.size > 0 %}
+      <h3>Projects</h3>
+      <ul>
+        {% for project in done_projects %}
+          <li>
+            <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+            {% if project.stage %}<span class="progress-dashboard__badge">{{ project.stage }}</span>{% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+    {% if done_posts.size > 0 %}
+      <h3>Recent notes</h3>
+      <ul>
+        {% for post in done_posts %}
+          <li>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            <span class="progress-dashboard__date">{{ post.date | date: "%b %d, %Y" }}</span>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+    {% if done_projects.size == 0 and done_posts.size == 0 %}
+      <p><em>Nothing completed yet.</em></p>
+    {% endif %}
+  </div>
+</div>

@@ -49,9 +49,7 @@ feature_row:
 <div id="recent-projects" class="recent-projects">
   <h2>Recent Projects</h2>
   <div class="grid__wrapper">
-    {% assign projects = site.projects | sort: 'date' | reverse %}
-    {% for project in projects limit:6 %}
-      {% include archive-single.html type="grid" %}
-    {% endfor %}
+    {% assign projects = site.projects | sort: 'title' | reverse %}
+    {% include documents-collection.html entries=projects type="grid" %}
   </div>
 </div> 

@@ -1,5 +1,5 @@
 ---
-title: "Blog Post Guide"
+title: "Writing Guide"
 layout: single
 permalink: /post-guide/
 toc: true
@@ -7,105 +7,45 @@ toc_sticky: true
 author_profile: true
 ---
 
-# Blog Post Structure Guide
+# Writing Guide
 
-This guide outlines how blog posts are organized and tagged in this website.
+All notes live in `_posts/` and are filtered by **category** (content type). Projects have permanent hubs in `_projects/`.
 
-## Categories
+## Content types (categories)
 
-All posts must belong to one of these main categories:
+| Category | Purpose | Template |
+|----------|---------|----------|
+| `blog` | Technical notes, opinions, tutorials | `_templates/blog-post.md` |
+| `reading` | Books, papers, courses, documentation | `_templates/reading-note.md` |
+| `progress` | Project progress journal entries | `_templates/progress-note.md` |
 
-### Project Ideas
-Posts about potential projects and implementations:
-- Initial concepts and brainstorming
-- Technical feasibility studies
-- Implementation strategies
-- Resource requirements and planning
+Listing pages: [/blog/](/blog/), [/reading/](/reading/), [/progress/](/progress/).
 
-### Book Presentations
-Reviews and analyses of learning materials:
-- Technical books
-- Research papers
-- Documentation deep-dives
-- Online course materials
+## Project taxonomy
 
-### Tutorial Read
-Reviews and summaries of hands-on learning:
-- Online tutorials worked through
-- Course completion notes
-- Workshop summaries
-- Coding exercise reviews
+Progress notes and project hubs share these front matter fields:
 
-## Tag System
+- `domain` — data-science, geospatial, mlops, web-dev, ai-agents, optimization, energy-modeling
+- `autonomy` — exercise, little-experiment, solo-project
+- `stage` — notebook, prototype, mvp, app
+- `status` — goal, wip, done
+- `project_id` — slug linking notes to `/projects/your-id/`
 
-Tags help classify posts across different dimensions:
+See the [Project Taxonomy Guide](/tag-guide/) for details.
 
-### Content Type
-- `concept`: Initial ideas and theoretical discussions
-- `review`: Detailed analysis of resources
-- `summary`: Brief overviews and key points
-- `analysis`: In-depth technical exploration
+## Reading note structure
 
-### Technical Domain
-- `machine-learning`
-- `data-science`
-- `web-development`
-- `mlops`
-- `geospatial`
-- `ai-agents`
-- `optimization`
-
-### Difficulty Level
-- `beginner`
-- `intermediate`
-- `advanced`
-
-### Resource Type
-- `book`
-- `paper`
-- `course`
-- `documentation`
-- `video`
-- `workshop`
-
-## Post Structure Guidelines
-
-### Book Presentations
 1. Overview
-2. Key Concepts
-3. Practical Applications
-4. Code Examples (if any)
-5. Personal Takeaways
-6. Recommendations
+2. Key takeaways
+3. Practical applications
+4. Recommendations
 
-### Tutorial Reviews
-1. Resource Details
-2. Learning Objectives
-3. Implementation Notes
-4. Challenges Faced
-5. Key Learnings
-6. Next Steps
+## Progress note structure
 
-### Project Ideas
-1. Concept Overview
-2. Technical Requirements
-3. Potential Approaches
-4. Implementation Plan
-5. Resources Needed
-6. Next Actions
+1. Link to project hub
+2. What you did
+3. Next steps
 
-## Writing Tips
+## Blog post structure
 
-1. **Be Specific**: Include concrete examples and code snippets
-2. **Stay Focused**: Each post should have a clear main topic
-3. **Add Value**: Include personal insights and practical applications
-4. **Be Consistent**: Follow the category and tag guidelines
-5. **Link Related Content**: Reference other relevant posts or projects
-
-## Using This Guide
-
-1. Choose the appropriate category for your post
-2. Select relevant tags from each dimension
-3. Use the corresponding template
-4. Follow the structure guidelines
-5. Review against writing tips before publishing 
+Use clear sections, code snippets when useful, and link related projects or reading notes.

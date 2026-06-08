@@ -1,0 +1,20 @@
+{% if page.domain or page.autonomy or page.stage or page.status %}
+  <dl class="project-meta">
+    {% if page.domain %}
+      <dt>Domain</dt>
+      <dd>{{ page.domain | replace: "-", " " }}</dd>
+    {% endif %}
+    {% if page.autonomy %}
+      <dt>Autonomy</dt>
+      <dd>{{ page.autonomy | replace: "-", " " }}</dd>
+    {% endif %}
+    {% if page.stage %}
+      <dt>Stage</dt>
+      <dd>{{ page.stage }}</dd>
+    {% endif %}
+    {% if page.status %}
+      <dt>Status</dt>
+      <dd>{{ page.status }}</dd>
+    {% endif %}
+  </dl>
+{% endif %}

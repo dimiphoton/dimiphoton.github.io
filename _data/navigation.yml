@@ -4,52 +4,60 @@ main:
   - title: "Projects"
     url: /projects/
     children:
+      - title: "All Projects"
+        url: /projects/
+      - title: "Progress"
+        url: /progress/
       - title: "Data Science"
         url: /categories/data-science/
-      - title: "Web Development"
-        url: /categories/web-development/
       - title: "Geospatial"
         url: /categories/geospatial/
       - title: "MLOps"
         url: /categories/mlops/
+      - title: "Web Development"
+        url: /categories/web-development/
       - title: "AI Agents"
         url: /categories/ai-agents/
       - title: "Optimization"
         url: /categories/optimization/
-  - title: "Blog"
+  - title: "Writing"
     url: /blog/
     children:
-      - title: "Project Ideas"
-        url: /categories/project-ideas/
-      - title: "Book Presentations"
-        url: /categories/book-presentations/
-      - title: "Tutorial Reviews"
-        url: /categories/tutorial-read/
-      - title: "All Posts"
+      - title: "Blog"
         url: /blog/
+      - title: "Reading Notes"
+        url: /reading/
+      - title: "Project Progress"
+        url: /progress/
+  - title: "CV"
+    url: /cv/
   - title: "About"
     url: /about/
   - title: "Contact"
     url: /contact/
-  
-# Add blog sidebar navigation
-blog_sidebar:
-  - title: "Categories"
+
+projects:
+  - title: "Projects"
     children:
-      - title: "Project Ideas"
-        url: /categories/project-ideas/
-      - title: "Book Presentations"
-        url: /categories/book-presentations/
-      - title: "Tutorial Reviews"
-        url: /categories/tutorial-read/
-  - title: "By Topic"
+      - title: "All Projects"
+        url: /projects/
+      - title: "Progress Dashboard"
+        url: /progress/
+      - title: "Taxonomy Guide"
+        url: /tag-guide/
+
+writing:
+  - title: "Writing"
     children:
-      - title: "Machine Learning"
-        url: /tags/machine-learning/
-      - title: "Data Science"
-        url: /tags/data-science/
-      - title: "Web Development"
-        url: /tags/web-development/
-      - title: "MLOps"
-        url: /tags/mlops/
-  
+      - title: "Blog"
+        url: /blog/
+      - title: "Reading Notes"
+        url: /reading/
+      - title: "Project Progress"
+        url: /progress/
+  - title: "Guides"
+    children:
+      - title: "Post Guide"
+        url: /post-guide/
+      - title: "Taxonomy Guide"
+        url: /tag-guide/
