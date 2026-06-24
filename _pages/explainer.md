@@ -1,14 +1,14 @@
 ---
-title: "Reading Notes"
+title: "Explainers"
 layout: category
-permalink: /reading/
-taxonomy: reading
+permalink: /explainer/
+taxonomy: explainer
 author_profile: true
 entries_layout: list
 sidebar:
   nav: "writing"
 ---
 
-Notes on books, papers, courses, and documentation.
+Deep dives on concepts studied and explained in your own words.
 
 <p>Back to <a href="{{ '/writing/' | relative_url }}">writing</a>.</p>

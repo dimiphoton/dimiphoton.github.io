@@ -1,0 +1,23 @@
+# Maps project `domain` front matter values to category page URLs.
+domains:
+  data-science:
+    label: Data Science
+    category: /categories/data-science/
+  geospatial:
+    label: Geospatial
+    category: /categories/geospatial/
+  mlops:
+    label: MLOps
+    category: /categories/mlops/
+  web-dev:
+    label: Web Development
+    category: /categories/web-development/
+  ai-agents:
+    label: AI Agents
+    category: /categories/ai-agents/
+  optimization:
+    label: Optimization
+    category: /categories/optimization/
+  energy-modeling:
+    label: Energy Modeling
+    category: /categories/energy-modeling/

@@ -1,14 +1,14 @@
 ---
-title: "Reading Notes"
+title: "Learning"
 layout: category
-permalink: /reading/
-taxonomy: reading
+permalink: /learning/
+taxonomy: learning
 author_profile: true
 entries_layout: list
 sidebar:
   nav: "writing"
 ---
 
-Notes on books, papers, courses, and documentation.
+Guided exercises, coursework, and tutorial follow-alongs.
 
 <p>Back to <a href="{{ '/writing/' | relative_url }}">writing</a>.</p>

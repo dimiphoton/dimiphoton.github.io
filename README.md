@@ -4,6 +4,13 @@ This is my personal website built with Jekyll and the Minimal Mistakes theme. It
 
 ## Features
 
+- **Project hubs** (`_projects/`) — permanent portfolio pages with taxonomy metadata (domain, stage, status)
+- **Progress dashboard** (`/progress/`) — Kanban-style view of goals, work in progress, and completed items
+- **Project timelines** — progress notes linked to project hubs via `project_id`
+- **Writing sections** — blog, learning, explainers, challenges, ideas, reading notes, and project journals (each filtered by category)
+- **Domain browsing** — project collections filtered by domain (data science, geospatial, MLOps, etc.)
+- **Search** — Lunr-powered full-site search
+- **Templates** (`_templates/`) — starter files for each note type (see `/post-guide/`)
 
 ## Local Development
 

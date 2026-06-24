@@ -1,9 +1,14 @@
 ---
 title: "AI Agents Projects"
-layout: category
+layout: project-domain
 permalink: /categories/ai-agents/
-taxonomy: AI Agents
+domain: ai-agents
 author_profile: true
+entries_layout: grid
+classes:
+  - wide
+sidebar:
+  nav: "projects"
 ---
 
-Projects focused on autonomous AI agents, LLMs, and intelligent systems. 
+Projects focused on autonomous AI agents, LLMs, and intelligent systems.

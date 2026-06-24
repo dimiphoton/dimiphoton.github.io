@@ -1,0 +1,10 @@
+{% assign domain = include.domain | default: page.domain %}
+{% assign entries = site.projects | where: "domain", domain | where_exp: "project", "project.hidden != true" | sort: "title" %}
+
+{% if entries.size > 0 %}
+  {%- for post in entries -%}
+    {% include archive-single.html type=include.type %}
+  {%- endfor -%}
+{% else %}
+  <p><em>No projects in this domain yet.</em></p>
+{% endif %}

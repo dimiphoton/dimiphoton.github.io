@@ -19,6 +19,7 @@ Portfolio of practical work in data science, machine learning, and development.
 - [Web Development]({{ "/categories/web-development/" | relative_url }})
 - [AI Agents]({{ "/categories/ai-agents/" | relative_url }})
 - [Optimization]({{ "/categories/optimization/" | relative_url }})
+- [Energy Modeling]({{ "/categories/energy-modeling/" | relative_url }})
 
 ## Browse by taxonomy
 

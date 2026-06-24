@@ -5,6 +5,8 @@ permalink: /progress/
 author_profile: true
 classes:
   - wide
+sidebar:
+  nav: "writing"
 ---
 
 Track goals, work in progress, and completed milestones across projects.

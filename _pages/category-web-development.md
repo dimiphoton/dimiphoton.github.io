@@ -1,9 +1,14 @@
 ---
 title: "Web Development Projects"
-layout: category
+layout: project-domain
 permalink: /categories/web-development/
-taxonomy: Web Development
+domain: web-dev
 author_profile: true
+entries_layout: grid
+classes:
+  - wide
+sidebar:
+  nav: "projects"
 ---
 
-Web applications and development projects showcasing different frameworks and technologies. 
+Web applications and development projects showcasing different frameworks and technologies.

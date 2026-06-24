@@ -2,14 +2,20 @@
 {% assign autonomies = site.projects | map: "autonomy" | compact | uniq | sort %}
 {% assign stages = site.projects | map: "stage" | compact | uniq | sort %}
 {% assign tech_tags = site.projects | map: "tags" | join: "," | split: "," | uniq | sort %}
+{% assign domain_map = site.data.project_domains.domains %}
 
 <div class="project-tag-cloud">
   <div class="tag-section">
     <h4>Domain</h4>
     <div class="tag-group domain-tags">
       {% for domain in domains %}
+        {% assign domain_info = domain_map[domain] %}
         <span class="tag-item domain-tag">
-          <a href="/projects/">{{ domain | replace: "-", " " }}</a>
+          {% if domain_info %}
+            <a href="{{ domain_info.category | relative_url }}">{{ domain_info.label | default: domain | replace: "-", " " }}</a>
+          {% else %}
+            <a href="{{ '/projects/' | relative_url }}">{{ domain | replace: "-", " " }}</a>
+          {% endif %}
         </span>
       {% endfor %}
     </div>
@@ -20,7 +26,7 @@
     <div class="tag-group autonomy-tags">
       {% for autonomy in autonomies %}
         <span class="tag-item autonomy-tag">
-          <a href="/projects/">{{ autonomy | replace: "-", " " }}</a>
+          <a href="{{ '/projects/' | relative_url }}">{{ autonomy | replace: "-", " " }}</a>
         </span>
       {% endfor %}
     </div>
@@ -31,7 +37,7 @@
     <div class="tag-group stage-tags">
       {% for stage in stages %}
         <span class="tag-item stage-tag">
-          <a href="/progress/">{{ stage }}</a>
+          <a href="{{ '/progress/' | relative_url }}">{{ stage }}</a>
         </span>
       {% endfor %}
     </div>
@@ -42,8 +48,9 @@
     <div class="tag-group tech-tags">
       {% for tag in tech_tags %}
         {% if tag != "" %}
+          {% assign tag_slug = tag | slugify %}
           <span class="tag-item tech-tag">
-            <a href="/tags/{{ tag | slugify }}/">{{ tag }}</a>
+            <a href="{{ '/tags/' | append: tag_slug | append: '/' | relative_url }}">{{ tag }}</a>
           </span>
         {% endif %}
       {% endfor %}

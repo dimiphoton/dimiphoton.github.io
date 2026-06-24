@@ -1,14 +1,14 @@
 ---
-title: "Reading Notes"
+title: "Challenges"
 layout: category
-permalink: /reading/
-taxonomy: reading
+permalink: /challenge/
+taxonomy: challenge
 author_profile: true
 entries_layout: list
 sidebar:
   nav: "writing"
 ---
 
-Notes on books, papers, courses, and documentation.
+Write-ups from Kaggle competitions, ENS challenges, and hackathons.
 
 <p>Back to <a href="{{ '/writing/' | relative_url }}">writing</a>.</p>

@@ -5,47 +5,100 @@ permalink: /post-guide/
 toc: true
 toc_sticky: true
 author_profile: true
+sidebar:
+  nav: "writing"
 ---
 
 # Writing Guide
 
 All notes live in `_posts/` and are filtered by **category** (content type). Projects have permanent hubs in `_projects/`.
 
+**Rule of thumb:** category = type of note · `domain` = subject area · `project_id` = link to a project · `tags` = technologies and search keywords.
+
 ## Content types (categories)
 
-| Category | Purpose | Template |
-|----------|---------|----------|
-| `blog` | Technical notes, opinions, tutorials | `_templates/blog-post.md` |
-| `reading` | Books, papers, courses, documentation | `_templates/reading-note.md` |
-| `progress` | Project progress journal entries | `_templates/progress-note.md` |
+| Category | Purpose | Listing | Template |
+|----------|---------|---------|----------|
+| `blog` | Industry news, opinions, commentary | [/blog/](/blog/) | `_templates/blog-post.md` |
+| `progress` | Project progress journal | [/progress/](/progress/) | `_templates/progress-note.md` |
+| `learning` | Guided exercises, coursework, tutorials | [/learning/](/learning/) | `_templates/learning-note.md` |
+| `explainer` | Deep dive on a concept | [/explainer/](/explainer/) | `_templates/explainer-note.md` |
+| `challenge` | Kaggle, ENS, hackathon write-ups | [/challenge/](/challenge/) | `_templates/challenge-note.md` |
+| `idea` | Quick future project ideas | [/ideas/](/ideas/) | `_templates/idea-note.md` |
+| `reading` | Books, papers, courses | [/reading/](/reading/) | `_templates/reading-note.md` |
 
-Listing pages: [/blog/](/blog/), [/reading/](/reading/), [/progress/](/progress/).
+## Which category to use?
 
-## Project taxonomy
+| You are writing… | Category | Key front matter |
+|------------------|----------|------------------|
+| Actu / opinion piece | `blog` | `domain` |
+| Project milestone update | `progress` | `project_id`, `domain`, `status`, `stage` |
+| Guided exercise (“projet bateau”) | `learning` | `domain`, `autonomy: exercise` |
+| Weekend exploration | `learning` or `progress` | `autonomy: little-experiment` |
+| Future project idea (quick note) | `idea` | `domain` |
+| Future project idea (serious) | hub in `_projects/` | `status: goal` (+ optional `idea` post) |
+| Concept deep dive | `explainer` | `domain` |
+| Kaggle / ENS write-up | `challenge` | `domain`, `competition` |
 
-Progress notes and project hubs share these front matter fields:
+## Shared front matter
+
+Use on any note where relevant (not as categories):
 
 - `domain` — data-science, geospatial, mlops, web-dev, ai-agents, optimization, energy-modeling
 - `autonomy` — exercise, little-experiment, solo-project
 - `stage` — notebook, prototype, mvp, app
-- `status` — goal, wip, done
+- `status` — goal, wip, done (mainly `progress` and project hubs)
 - `project_id` — slug linking notes to `/projects/your-id/`
+- `competition` — slug grouping challenge posts (e.g. `titanic`, `ens-challenge-2024`)
 
-See the [Project Taxonomy Guide](/tag-guide/) for details.
+See the [Project Taxonomy Guide](/tag-guide/) for field details.
 
-## Reading note structure
+## Tags
 
-1. Overview
-2. Key takeaways
-3. Practical applications
-4. Recommendations
+Technologies and free-form keywords only: `Python`, `PyTorch`, `Kaggle`, `time-series`. Do not use tags for content type or domain.
 
-## Progress note structure
+## Note structures
+
+### Blog
+
+Clear sections, link related projects or reading notes.
+
+### Progress
 
 1. Link to project hub
 2. What you did
 3. Next steps
 
-## Blog post structure
+### Learning
 
-Use clear sections, code snippets when useful, and link related projects or reading notes.
+1. Context (course / tutorial source)
+2. What you did
+3. Takeaways
+
+### Explainer
+
+1. Problem
+2. Intuition
+3. How it works
+4. Example
+5. When to use it
+
+### Challenge
+
+1. Competition overview
+2. Approach
+3. Results
+4. Lessons learned
+
+### Idea
+
+1. Motivation
+2. Rough plan
+3. Open questions
+
+### Reading
+
+1. Overview
+2. Key takeaways
+3. Practical applications
+4. Recommendations

@@ -20,6 +20,8 @@ main:
         url: /categories/ai-agents/
       - title: "Optimization"
         url: /categories/optimization/
+      - title: "Energy Modeling"
+        url: /categories/energy-modeling/
   - title: "Writing"
     url: /writing/
     children:
@@ -27,6 +29,14 @@ main:
         url: /writing/
       - title: "Blog"
         url: /blog/
+      - title: "Learning"
+        url: /learning/
+      - title: "Explainers"
+        url: /explainer/
+      - title: "Challenges"
+        url: /challenge/
+      - title: "Ideas"
+        url: /ideas/
       - title: "Reading Notes"
         url: /reading/
       - title: "Project Progress"
@@ -55,6 +65,14 @@ writing:
         url: /writing/
       - title: "Blog"
         url: /blog/
+      - title: "Learning"
+        url: /learning/
+      - title: "Explainers"
+        url: /explainer/
+      - title: "Challenges"
+        url: /challenge/
+      - title: "Ideas"
+        url: /ideas/
       - title: "Reading Notes"
         url: /reading/
       - title: "Project Progress"

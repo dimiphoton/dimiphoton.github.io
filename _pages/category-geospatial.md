@@ -1,11 +1,14 @@
 ---
 title: "Geospatial Projects"
-layout: category
+layout: project-domain
 permalink: /categories/geospatial/
-taxonomy: Geospatial
+domain: geospatial
 author_profile: true
+entries_layout: grid
+classes:
+  - wide
 sidebar:
   nav: "projects"
 ---
 
-Projects involving geographic information systems, spatial analysis, and mapping applications. 
+Projects involving geographic information systems, spatial analysis, and mapping applications.

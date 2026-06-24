@@ -1,11 +1,14 @@
 ---
 title: "MLOps Projects"
-layout: category
+layout: project-domain
 permalink: /categories/mlops/
-taxonomy: MLOps
+domain: mlops
 author_profile: true
+entries_layout: grid
+classes:
+  - wide
 sidebar:
   nav: "projects"
 ---
 
-Projects focused on machine learning operations, deployment pipelines, and model monitoring systems. 
+Projects focused on machine learning operations, deployment pipelines, and model monitoring systems.

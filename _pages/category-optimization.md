@@ -1,9 +1,14 @@
 ---
 title: "Optimization Projects"
-layout: category
+layout: project-domain
 permalink: /categories/optimization/
-taxonomy: Optimization
+domain: optimization
 author_profile: true
+entries_layout: grid
+classes:
+  - wide
+sidebar:
+  nav: "projects"
 ---
 
-Projects involving optimization algorithms, performance tuning, and efficiency improvements. 
+Projects involving optimization algorithms, performance tuning, and efficiency improvements.

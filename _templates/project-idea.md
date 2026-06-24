@@ -1,15 +1,15 @@
 ---
-title: "Project Idea: RC Model for Home Heating"
-date: 2025-04-15
+title: "Idea: Project name"
+date: "YYYY-MM-DD"
 categories:
-  - projects
-  - energy-modeling
+  - idea
+domain: data-science
+project_id: optional-project-slug
 tags:
-  - solo project
   - Python
-  - goal:notebook   # Here you indicate that the objective is to produce a notebook
-project_id: rc-model-heating
+excerpt: "One-line pitch for the idea."
 ---
-I'm starting a new project to build an RC (resistor-capacitor) thermal model for home heating.
-The goal is to create a well-documented notebook that shows how a basic RC model can approximate indoor temperature dynamics.
-Stay tuned for my progress as I work toward this objective.
+
+See `_templates/idea-note.md` for the full structure.
+
+Quick idea note. For a serious idea, also create a hub in `_projects/` with `status: goal`.

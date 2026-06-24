@@ -114,7 +114,7 @@ analytics:
 # Site Author
 author:
   name             : "Dimi Photon"
-  avatar           : "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/bio-photo.svg"
   bio              : "Data scientist and developer."
   location         :
   email            :
@@ -304,12 +304,16 @@ compress_html:
     envs: development
 
 
-# Project taxonomy (front matter on _projects/ and progress _posts/)
-# domain:   data-science | geospatial | mlops | web-dev | ai-agents | optimization | energy-modeling
-# autonomy: exercise | little-experiment | solo-project
-# stage:    notebook | prototype | mvp | app
-# status:   goal | wip | done
-# project_id: slug linking hub pages to progress notes
+# Project taxonomy (front matter on _projects/ and _posts/)
+# domain:      data-science | geospatial | mlops | web-dev | ai-agents | optimization | energy-modeling
+# autonomy:    exercise | little-experiment | solo-project
+# stage:       notebook | prototype | mvp | app
+# status:      goal | wip | done
+# project_id:  slug linking hub pages to progress notes
+# competition: slug grouping challenge write-ups (category: challenge)
+#
+# Writing categories (_posts/): blog | progress | learning | explainer | challenge | idea | reading
+# See _pages/post-guide.md for which category to use per note type.
 
 # Collections
 collections:

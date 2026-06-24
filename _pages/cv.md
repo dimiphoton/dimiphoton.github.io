@@ -6,11 +6,7 @@ author_profile: false
 toc: true
 ---
 
-<p class="cv-download">
-  <a href="{{ '/assets/files/cv-dimi-photon.pdf' | relative_url }}" class="btn btn--primary" download>
-    <i class="fas fa-file-pdf"></i> Download PDF
-  </a>
-</p>
+<p class="cv-download"><em>PDF version coming soon — add <code>assets/files/cv-dimi-photon.pdf</code> to enable download.</em></p>
 
 ## Summary
 
