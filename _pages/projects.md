@@ -7,24 +7,24 @@ author_profile: true
 entries_layout: grid
 classes:
   - wide
+header:
+  overlay_color: "#1a365d"
+  overlay_filter: "0.65"
+  caption: "Projets"
 ---
 
-Portfolio of practical work in data science, machine learning, and development.
+Travaux pratiques en optimisation, analyse spatiale et data engineering.
 
 ## By domain
 
 - [Data Science]({{ "/categories/data-science/" | relative_url }})
 - [Geospatial]({{ "/categories/geospatial/" | relative_url }})
 - [MLOps]({{ "/categories/mlops/" | relative_url }})
-- [Web Development]({{ "/categories/web-development/" | relative_url }})
-- [AI Agents]({{ "/categories/ai-agents/" | relative_url }})
 - [Optimization]({{ "/categories/optimization/" | relative_url }})
 - [Energy Modeling]({{ "/categories/energy-modeling/" | relative_url }})
 
-## Browse by taxonomy
+<h2 id="browse-by-taxonomy">Browse by taxonomy</h2>
 
 {% include project-tag-cloud.html %}
 
-## Progress
-
-Track goals and milestones on the [progress dashboard]({{ "/progress/" | relative_url }}).
+<p class="projects-footer">Suivi d'avancement : <a href="{{ '/progress/' | relative_url }}">progress dashboard</a></p>

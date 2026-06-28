@@ -10,7 +10,7 @@ toc: true
 
 ## Summary
 
-Data scientist and developer with experience in machine learning, scripting, and geospatial analysis. I build practical data products from exploration notebooks to deployed applications.
+Data scientist focused on **optimization**, **spatial data**, and **data engineering**. I build reproducible pipelines from exploration notebooks to deployed tools.
 
 ## Skills
 

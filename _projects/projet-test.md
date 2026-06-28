@@ -1,26 +1,27 @@
 ---
-title: "Projet test"
+title: "Détection d'anomalies capteurs IoT"
 permalink: /projects/projet-test/
 layout: single
 project_id: projet-test
 domain: data-science
 autonomy: solo-project
 stage: notebook
-status: wip
+status: done
 tags:
   - Python
-  - Lorem
-excerpt: "Hub de démonstration pour les notes de progression — contenu Lorem Ipsum."
+  - pandas
+  - scikit-learn
+excerpt: "Projet démo — détection d'anomalies sur séries temporelles de capteurs IoT."
 ---
 
 {% include project-meta.html %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Projet de test pour illustrer la taxonomie du site et lier les notes de type `progress`.
+Projet de démonstration du site : détecter des anomalies sur des mesures de température issues de capteurs IoT (données synthétiques). Illustration complète du cycle idée → développement → final via notes liées.
 
-**Objectifs fictifs :**
+**Livrables :**
 
-- Sed do eiusmod tempor incididunt ut labore
-- Ut enim ad minim veniam, quis nostrud exercitation
-- Duis aute irure dolor in reprehenderit in voluptate
+- Notebook d'exploration et baseline Isolation Forest
+- Seuils alertes documentés
+- Rapport court avec métriques precision/recall sur jeu étiqueté
 
 {% include project-timeline.html project_id=projet-test %}

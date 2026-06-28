@@ -1,0 +1,55 @@
+{% assign all_posts = site.posts | sort: 'date' | reverse %}
+
+<nav class="writing-filter" aria-label="Filter notes by type">
+  <button type="button" class="writing-filter__btn is-active" data-filter="all">Tout</button>
+  <button type="button" class="writing-filter__btn" data-filter="blog">Blog</button>
+  <button type="button" class="writing-filter__btn" data-filter="progress">Progress</button>
+  <button type="button" class="writing-filter__btn" data-filter="learning">Learning</button>
+  <button type="button" class="writing-filter__btn" data-filter="explainer">Explainer</button>
+  <button type="button" class="writing-filter__btn" data-filter="challenge">Challenge</button>
+  <button type="button" class="writing-filter__btn" data-filter="idea">Ideas</button>
+  <button type="button" class="writing-filter__btn" data-filter="reading">Reading</button>
+</nav>
+
+<div class="writing-list">
+  {% for post in all_posts %}
+    {% assign cats = post.categories | join: ' ' %}
+    <article class="writing-item" data-categories="{{ cats }}">
+      <div class="writing-item__meta">
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d %b %Y" }}</time>
+        {% assign note_type = post.categories | first %}
+        <span class="note-type-badge note-type-badge--{{ note_type }}">{{ note_type }}</span>
+        {% if post.domain %}
+          <span class="taxonomy-badge taxonomy-badge--domain taxonomy-badge--{{ post.domain }}">{{ post.domain | replace: "-", " " }}</span>
+        {% endif %}
+      </div>
+      <h3 class="writing-item__title">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </h3>
+      {% if post.excerpt %}
+        <p class="writing-item__excerpt">{{ post.excerpt | strip_html | truncate: 140 }}</p>
+      {% endif %}
+    </article>
+  {% else %}
+    <p><em>Aucune note publiée.</em></p>
+  {% endfor %}
+</div>
+
+<script>
+(function () {
+  var buttons = document.querySelectorAll(".writing-filter__btn");
+  var items = document.querySelectorAll(".writing-item");
+  buttons.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var filter = btn.getAttribute("data-filter");
+      buttons.forEach(function (b) { b.classList.remove("is-active"); });
+      btn.classList.add("is-active");
+      items.forEach(function (item) {
+        var cats = item.getAttribute("data-categories") || "";
+        var show = filter === "all" || (" " + cats + " ").indexOf(" " + filter + " ") !== -1;
+        item.style.display = show ? "" : "none";
+      });
+    });
+  });
+})();
+</script>

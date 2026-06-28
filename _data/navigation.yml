@@ -3,83 +3,29 @@ main:
     url: /
   - title: "Projects"
     url: /projects/
-    children:
-      - title: "All Projects"
-        url: /projects/
-      - title: "Progress"
-        url: /progress/
-      - title: "Data Science"
-        url: /categories/data-science/
-      - title: "Geospatial"
-        url: /categories/geospatial/
-      - title: "MLOps"
-        url: /categories/mlops/
-      - title: "Web Development"
-        url: /categories/web-development/
-      - title: "AI Agents"
-        url: /categories/ai-agents/
-      - title: "Optimization"
-        url: /categories/optimization/
-      - title: "Energy Modeling"
-        url: /categories/energy-modeling/
   - title: "Writing"
     url: /writing/
-    children:
-      - title: "All Writing"
-        url: /writing/
-      - title: "Blog"
-        url: /blog/
-      - title: "Learning"
-        url: /learning/
-      - title: "Explainers"
-        url: /explainer/
-      - title: "Challenges"
-        url: /challenge/
-      - title: "Ideas"
-        url: /ideas/
-      - title: "Reading Notes"
-        url: /reading/
-      - title: "Project Progress"
-        url: /progress/
   - title: "CV"
     url: /cv/
   - title: "About"
     url: /about/
-  - title: "Contact"
-    url: /contact/
 
 projects:
   - title: "Projects"
     children:
       - title: "All Projects"
         url: /projects/
-      - title: "Progress Dashboard"
+      - title: "By domain"
+        url: /projects/#browse-by-taxonomy
+      - title: "Progress"
         url: /progress/
-      - title: "Taxonomy Guide"
-        url: /tag-guide/
 
 writing:
   - title: "Writing"
     children:
-      - title: "All Writing"
+      - title: "All notes"
         url: /writing/
-      - title: "Blog"
-        url: /blog/
-      - title: "Learning"
-        url: /learning/
-      - title: "Explainers"
-        url: /explainer/
-      - title: "Challenges"
-        url: /challenge/
-      - title: "Ideas"
-        url: /ideas/
-      - title: "Reading Notes"
-        url: /reading/
-      - title: "Project Progress"
-        url: /progress/
-  - title: "Guides"
-    children:
-      - title: "Post Guide"
+      - title: "Post guide"
         url: /post-guide/
-      - title: "Taxonomy Guide"
+      - title: "Taxonomy"
         url: /tag-guide/

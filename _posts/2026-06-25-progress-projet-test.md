@@ -1,5 +1,5 @@
 ---
-title: "Progress : premier jalon — projet test"
+title: "Progress : baseline Isolation Forest et features"
 date: 2026-06-25
 categories:
   - progress
@@ -10,22 +10,21 @@ stage: notebook
 status: wip
 tags:
   - Python
-  - Lorem
-excerpt: "Mise à jour fictive d'avancement pour le projet test."
+  - scikit-learn
+excerpt: "Développement — jeu synthétique, features rolling et premier modèle."
 ---
 
-Lien vers le hub : [Projet test](/projects/projet-test/)
+[Détection d'anomalies capteurs IoT](/projects/projet-test/)
 
 ## What I did
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
-
-- Notebook d'exploration initial créé
-- Jeu de données factice importé avec pandas
-- Première visualisation matplotlib réalisée
+- Génération de 4 capteurs × 30 jours (1 point / 5 min) avec 12 anomalies injectées
+- Features : rolling mean/std (1 h), delta température, heure du jour
+- `IsolationForest` entraîné sur période « normale »
+- Premier bilan : recall 0.75, precision 0.60 (trop de faux positifs)
 
 ## Next steps
 
-- [ ] Sed nisi nulla quis sem at nibh elementum imperdiet
-- [ ] Duis sagittis ipsum praesent mauris
-- [ ] Fusce nec tellus sed augue semper porta
+- [ ] Ajuster `contamination` et seuil de décision
+- [ ] Règles métier : pas d'alerte si un seul capteur dévie < 30 min
+- [ ] Visualisation des alertes sur timeline

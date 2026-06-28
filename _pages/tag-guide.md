@@ -68,6 +68,30 @@ Optional slug for grouping challenge write-ups (category `challenge`):
 
 Use one slug per competition across all related posts.
 
+## Image de couverture (`header.teaser`)
+
+Image affichée sur les **cartes projet** (accueil, grille `/projects/`) à la place du bandeau coloré par domaine.
+
+```yaml
+---
+title: "Mon projet"
+header:
+  teaser: /assets/images/projects/mon-projet-cover.jpg
+project_id: mon-projet
+domain: geospatial
+# ...
+---
+```
+
+**Conventions :**
+
+- Chemin relatif au site, ex. `/assets/images/projects/…`
+- Format recommandé : **1200×630 px** (ratio ~1.9:1) ou **800×450 px**
+- Contenu : capture notebook, carte, schéma d'architecture, dashboard
+- Fichier dans `assets/images/projects/` (à créer) puis référencé dans le hub `_projects/`
+
+Sans `header.teaser`, la carte utilise un **fond coloré** selon le `domain` (défini dans le CSS).
+
 ## Tags
 
 Technologies and search keywords only: `Python`, `QGIS`, `docker`, `Kaggle`. Not for content type or domain.

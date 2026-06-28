@@ -12,16 +12,16 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 remote_theme           : "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "Dimi Photon"
 title_separator          : "-"
-subtitle                 : "Data Science & Development"
+subtitle                 : "Optimisation · Spatial · Data Engineering"
 name                     : "Dimi Photon"
-description              : "Portfolio, projects and blog."
+description              : "Data scientist — optimisation, analyse spatiale et data engineering. Portfolio et notes techniques."
 url                      : "https://dimiphoton.github.io"
 baseurl                  : ""
 repository               : "dimiphoton/dimiphoton.github.io"
@@ -115,7 +115,7 @@ analytics:
 author:
   name             : "Dimi Photon"
   avatar           : "/assets/images/bio-photo.svg"
-  bio              : "Data scientist and developer."
+  bio              : "Data scientist — optimisation, spatial, data engineering."
   location         :
   email            :
   links:

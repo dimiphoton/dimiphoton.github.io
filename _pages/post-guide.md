@@ -19,13 +19,13 @@ All notes live in `_posts/` and are filtered by **category** (content type). Pro
 
 | Category | Purpose | Listing | Template |
 |----------|---------|---------|----------|
-| `blog` | Industry news, opinions, commentary | [/blog/](/blog/) | `_templates/blog-post.md` |
-| `progress` | Project progress journal | [/progress/](/progress/) | `_templates/progress-note.md` |
-| `learning` | Guided exercises, coursework, tutorials | [/learning/](/learning/) | `_templates/learning-note.md` |
-| `explainer` | Deep dive on a concept | [/explainer/](/explainer/) | `_templates/explainer-note.md` |
-| `challenge` | Kaggle, ENS, hackathon write-ups | [/challenge/](/challenge/) | `_templates/challenge-note.md` |
-| `idea` | Quick future project ideas | [/ideas/](/ideas/) | `_templates/idea-note.md` |
-| `reading` | Books, papers, courses | [/reading/](/reading/) | `_templates/reading-note.md` |
+| `blog` | Industry news, opinions, commentary | [/writing/](/writing/) | `_templates/blog-post.md` |
+| `progress` | Project progress journal | [/writing/](/writing/) | `_templates/progress-note.md` |
+| `learning` | Guided exercises, coursework, tutorials | [/writing/](/writing/) | `_templates/learning-note.md` |
+| `explainer` | Deep dive on a concept | [/writing/](/writing/) | `_templates/explainer-note.md` |
+| `challenge` | Kaggle, ENS, hackathon write-ups | [/writing/](/writing/) | `_templates/challenge-note.md` |
+| `idea` | Quick future project ideas | [/writing/](/writing/) | `_templates/idea-note.md` |
+| `reading` | Books, papers, courses | [/writing/](/writing/) | `_templates/reading-note.md` |
 
 ## Which category to use?
 

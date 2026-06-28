@@ -1,33 +1,32 @@
 ---
-layout: home
-author_profile: true
+layout: home-portfolio
+author_profile: false
+classes:
+  - wide
 ---
 
-Welcome to my portfolio and blog. Here you'll find projects in data science, web development, and geospatial work, along with writing notes and project progress updates.
+{% include hero-home.html %}
 
-<p><a href="{{ '/progress/' | relative_url }}" class="btn btn--primary">View current progress</a></p>
+<section class="home-section home-projects">
+  <div class="home-section__header">
+    <h2>Projets sélectionnés</h2>
+    <a href="{{ '/projects/' | relative_url }}" class="home-section__link">Tous les projets →</a>
+  </div>
+  <div class="grid__wrapper home-projects__grid">
+    {% assign home_projects = site.projects | sort: 'title' | reverse %}
+    {% include documents-collection.html entries=home_projects type="featured" %}
+  </div>
+</section>
 
-## Featured projects
-
-<div class="grid__wrapper">
-  {% assign featured = site.projects | where: "featured", true %}
-  {% if featured.size > 0 %}
-    {% include documents-collection.html entries=featured type="grid" %}
-  {% else %}
-    {% assign recent_projects = site.projects | sort: 'title' | reverse | limit: 3 %}
-    {% include documents-collection.html entries=recent_projects type="grid" %}
-  {% endif %}
-</div>
-
-<p><a href="{{ '/projects/' | relative_url }}">Browse all projects →</a></p>
-
-## Latest writing
-
-<div class="grid__wrapper">
-  {% assign latest = site.posts | sort: 'date' | reverse %}
-  {% for post in latest limit:5 %}
-    {% include archive-single.html type="grid" %}
-  {% endfor %}
-</div>
-
-<p><a href="{{ '/writing/' | relative_url }}">All writing →</a></p>
+<section class="home-section home-writing">
+  <div class="home-section__header">
+    <h2>Notes récentes</h2>
+    <a href="{{ '/writing/' | relative_url }}" class="home-section__link">Toutes les notes →</a>
+  </div>
+  <div class="home-writing__list">
+    {% assign latest = site.posts | sort: 'date' | reverse %}
+    {% for post in latest limit:4 %}
+      {% include archive-single.html type="list" show_category=true %}
+    {% endfor %}
+  </div>
+</section>

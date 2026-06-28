@@ -6,25 +6,22 @@ project_id: rc-model-heating
 domain: energy-modeling
 autonomy: solo-project
 stage: notebook
-status: goal
+status: done
 featured: true
 tags:
   - Python
   - RC model
-excerpt: "Thermal RC model of a house heating system — from equations to calibration."
+excerpt: "Modèle thermique RC d'un système de chauffage — de la physique à la calibration."
 ---
 
 {% include project-meta.html %}
 
-Build an RC (resistor-capacitor) thermal model of a house heating system.
+Modèle RC (résistance-capacité) du chauffage d'un logement. Simulation de la température intérieure en fonction de l'activité des radiateurs et de la météo extérieure.
 
-The goal is a clear, well-documented notebook that simulates indoor temperature dynamics based on radiator activity and external weather.
+**Livrables :**
 
-**Planned exploration:**
-
-- Physical assumptions of the RC model
-- Equation structure
-- Calibration with sample data
-- Comparison with real building data when available
+- Notebook documenté avec hypothèses physiques
+- Calibration sur données synthétiques puis comparaison données réelles
+- Graphiques de validation et sensibilité aux paramètres
 
 {% include project-timeline.html project_id=rc-model-heating %}
