@@ -1,7 +1,9 @@
 {% if post.header.teaser %}
   {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
+  {% assign teaser_alt = post.header.teaser_alt | default: post.title | escape %}
 {% else %}
   {% assign teaser = site.teaser %}
+  {% assign teaser_alt = "" %}
 {% endif %}
 
 {% if post.id %}
@@ -20,7 +22,7 @@
     {% if include.type == "grid" or include.type == "featured" %}
       <div class="archive__item-teaser{% unless teaser %} archive__item-teaser--placeholder domain-{{ post.domain | default: 'default' }}{% endunless %}">
         {% if teaser %}
-          <img src="{{ teaser | relative_url }}" alt="">
+          <img src="{{ teaser | relative_url }}" alt="{{ teaser_alt }}">
         {% elsif post.domain %}
           <span class="archive__item-teaser__label">{{ post.domain | replace: "-", " " }}</span>
         {% endif %}

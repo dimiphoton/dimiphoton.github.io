@@ -1,5 +1,8 @@
 ---
 title: "Kaggle — Spaceship Titanic"
+header:
+  teaser: /assets/images/projects/kaggle-spaceship.svg
+  teaser_alt: "Vaisseau et orbite stylisés — vignette placeholder Kaggle"
 permalink: /projects/kaggle-spaceship/
 layout: single
 project_id: kaggle-spaceship

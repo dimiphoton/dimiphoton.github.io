@@ -1,5 +1,8 @@
 ---
 title: "TP ENS — pipeline scikit-learn"
+header:
+  teaser: /assets/images/projects/ens-sklearn-lab.svg
+  teaser_alt: "Pipeline scikit-learn — vignette placeholder"
 permalink: /projects/ens-sklearn-lab/
 layout: single
 project_id: ens-sklearn-lab

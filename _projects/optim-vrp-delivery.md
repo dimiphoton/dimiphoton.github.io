@@ -1,5 +1,8 @@
 ---
 title: "Optimisation de tournées VRP"
+header:
+  teaser: /assets/images/projects/optim-vrp-delivery.svg
+  teaser_alt: "Schéma de tournées de livraison optimisées — vignette placeholder"
 permalink: /projects/optim-vrp-delivery/
 layout: single
 project_id: optim-vrp-delivery

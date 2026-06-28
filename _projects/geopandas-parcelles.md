@@ -1,5 +1,8 @@
 ---
 title: "TP QGIS — géopandas & parcelles"
+header:
+  teaser: /assets/images/projects/geopandas-parcelles.svg
+  teaser_alt: "Parcelles cadastrales stylisées — vignette placeholder"
 permalink: /projects/geopandas-parcelles/
 layout: single
 project_id: geopandas-parcelles

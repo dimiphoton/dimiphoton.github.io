@@ -15,6 +15,8 @@ Travaux pratiques en optimisation, analyse spatiale et data engineering.
 
 Les projets **★ Sélection** sont mis en avant via `featured: true` — en tête de liste et sur l'[accueil](/).
 
+Guide vignettes : [How-to — vignettes projet](/how-to/vignettes-projets/).
+
 ## Par domaine
 
 - [Data Science]({{ "/categories/data-science/" | relative_url }})

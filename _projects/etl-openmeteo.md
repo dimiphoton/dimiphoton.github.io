@@ -1,5 +1,8 @@
 ---
 title: "Pipeline ETL météo Open-Meteo"
+header:
+  teaser: /assets/images/projects/etl-openmeteo.svg
+  teaser_alt: "Schéma pipeline API vers Parquet — vignette placeholder"
 permalink: /projects/etl-openmeteo/
 layout: single
 project_id: etl-openmeteo

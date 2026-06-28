@@ -1,5 +1,8 @@
 ---
 title: "Détection d'anomalies capteurs IoT"
+header:
+  teaser: /assets/images/projects/projet-test.svg
+  teaser_alt: "Série temporelle avec points d'anomalie — vignette placeholder"
 permalink: /projects/projet-test/
 layout: single
 project_id: projet-test

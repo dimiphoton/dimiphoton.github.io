@@ -81,13 +81,16 @@ Use one slug per competition across all related posts.
 
 ## Image de couverture (`header.teaser`)
 
-Image affichée sur les **cartes projet** (accueil, grille `/projects/`) à la place du bandeau coloré par domaine.
+Image affichée sur les **cartes projet** (accueil, grille `/projects/`).
+
+**Tutoriel complet :** [/how-to/vignettes-projets/](/how-to/vignettes-projets/)
 
 ```yaml
 ---
 title: "Mon projet"
 header:
-  teaser: /assets/images/projects/mon-projet-cover.jpg
+  teaser: /assets/images/projects/mon-projet-cover.webp
+  teaser_alt: "Description courte de l'image pour l'accessibilité"
 project_id: mon-projet
 domain: geospatial
 # ...
@@ -97,11 +100,11 @@ domain: geospatial
 **Conventions :**
 
 - Chemin relatif au site, ex. `/assets/images/projects/…`
-- Format recommandé : **1200×630 px** (ratio ~1.9:1) ou **800×450 px**
-- Contenu : capture notebook, carte, schéma d'architecture, dashboard
-- Fichier dans `assets/images/projects/` (à créer) puis référencé dans le hub `_projects/`
+- Format recommandé : **800×400 px** (ratio 2:1) — WebP ou JPG
+- Placeholders SVG fournis dans `assets/images/projects/` — à remplacer par de vraies captures
+- `teaser_alt` : texte lu par les lecteurs d'écran
 
-Sans `header.teaser`, la carte utilise un **fond coloré** selon le `domain` (défini dans le CSS).
+Sans `header.teaser`, la carte utilise un **fond coloré** selon le `domain`.
 
 ## Tags
 

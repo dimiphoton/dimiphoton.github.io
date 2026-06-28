@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-labelledby="t">
+  <title id="t">Modèle RC chauffage  vignette placeholder</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#c2410c"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#bg)"/>
+  <path d="M100 280 Q250 120 400 200 T700 140" fill="none" stroke="#fff" stroke-width="4" opacity="0.9"/>
+  <path d="M100 300 Q250 200 400 260 T700 220" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="48" y="72" fill="#fff" font-family="system-ui,sans-serif" font-size="30" font-weight="700">RC · Chauffage</text>
+  <text x="48" y="108" fill="rgba(255,255,255,0.8)" font-family="system-ui,sans-serif" font-size="17">energy modeling · placeholder</text>
+</svg>

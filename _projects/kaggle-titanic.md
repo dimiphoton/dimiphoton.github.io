@@ -1,5 +1,8 @@
 ---
 title: "Kaggle — Titanic"
+header:
+  teaser: /assets/images/projects/kaggle-titanic.svg
+  teaser_alt: "Score leaderboard Kaggle Titanic — vignette placeholder"
 permalink: /projects/kaggle-titanic/
 layout: single
 project_id: kaggle-titanic

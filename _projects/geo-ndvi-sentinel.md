@@ -1,5 +1,8 @@
 ---
 title: "Cartographie NDVI Sentinel-2"
+header:
+  teaser: /assets/images/projects/geo-ndvi-sentinel.svg
+  teaser_alt: "Carte NDVI stylisée par parcelles — vignette placeholder"
 permalink: /projects/geo-ndvi-sentinel/
 layout: single
 project_id: geo-ndvi-sentinel

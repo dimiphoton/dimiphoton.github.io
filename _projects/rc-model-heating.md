@@ -1,5 +1,8 @@
 ---
 title: "RC Model for Home Heating"
+header:
+  teaser: /assets/images/projects/rc-model-heating.svg
+  teaser_alt: "Courbes de température simulée — vignette placeholder"
 permalink: /projects/rc-model-heating/
 layout: single
 project_id: rc-model-heating
