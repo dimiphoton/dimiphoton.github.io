@@ -601,6 +601,13 @@ search: false
   &--goal { background: #fffaf0; color: #c05621; }
   &--wip { background: #ebf8ff; color: #2b6cb0; }
   &--done { background: #f0fff4; color: #276749; }
+
+  &--kaggle {
+    background: #1a365d;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.65rem;
+  }
 }
 
 /* Note type badges */
@@ -704,6 +711,24 @@ search: false
 .projects-footer {
   margin-top: 2rem;
   font-size: 0.9rem;
+}
+
+.projects-filter__btn--inline {
+  border: none;
+  background: transparent;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.project-tag-cloud .autonomy-tag .projects-filter__btn--inline.is-active {
+  font-weight: 700;
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 768px) {

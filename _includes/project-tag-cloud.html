@@ -1,36 +1,26 @@
-{% assign domains = site.projects | map: "domain" | compact | uniq | sort %}
-{% assign autonomies = site.projects | map: "autonomy" | compact | uniq | sort %}
+{% assign hide_autonomy = include.hide_autonomy | default: false %}
 {% assign stages = site.projects | map: "stage" | compact | uniq | sort %}
 {% assign tech_tags = site.projects | map: "tags" | join: "," | split: "," | uniq | sort %}
-{% assign domain_map = site.data.project_domains.domains %}
 
 <div class="project-tag-cloud">
-  <div class="tag-section">
-    <h4>Domain</h4>
-    <div class="tag-group domain-tags">
-      {% for domain in domains %}
-        {% assign domain_info = domain_map[domain] %}
-        <span class="tag-item domain-tag">
-          {% if domain_info %}
-            <a href="{{ domain_info.category | relative_url }}">{{ domain_info.label | default: domain | replace: "-", " " }}</a>
-          {% else %}
-            <a href="{{ '/projects/' | relative_url }}">{{ domain | replace: "-", " " }}</a>
-          {% endif %}
-        </span>
-      {% endfor %}
-    </div>
-  </div>
-
+  {% unless hide_autonomy %}
   <div class="tag-section">
     <h4>Autonomy</h4>
     <div class="tag-group autonomy-tags">
+      {% assign autonomies = site.projects | map: "autonomy" | compact | uniq | sort %}
       {% for autonomy in autonomies %}
         <span class="tag-item autonomy-tag">
-          <a href="{{ '/projects/' | relative_url }}">{{ autonomy | replace: "-", " " }}</a>
+          <button type="button" class="projects-filter__btn projects-filter__btn--inline" data-filter="{{ autonomy }}">
+            {% if autonomy == "exercise" %}Learning{% elsif autonomy == "little-experiment" %}Week-end{% elsif autonomy == "solo-project" %}Solo{% else %}{{ autonomy | replace: "-", " " }}{% endif %}
+          </button>
         </span>
       {% endfor %}
+      <span class="tag-item autonomy-tag">
+        <button type="button" class="projects-filter__btn projects-filter__btn--inline" data-filter="kaggle">Kaggle</button>
+      </span>
     </div>
   </div>
+  {% endunless %}
 
   <div class="tag-section">
     <h4>Production Stage</h4>

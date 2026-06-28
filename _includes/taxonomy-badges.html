@@ -1,11 +1,16 @@
 {% assign doc = include.doc | default: post | default: page %}
-{% if doc.domain or doc.autonomy or doc.stage or doc.status %}
+{% if doc.domain or doc.autonomy or doc.stage or doc.status or doc.tags %}
   <div class="taxonomy-badges">
     {% if doc.domain %}
       <span class="taxonomy-badge taxonomy-badge--domain taxonomy-badge--{{ doc.domain }}">{{ doc.domain | replace: "-", " " }}</span>
     {% endif %}
     {% if doc.autonomy %}
-      <span class="taxonomy-badge taxonomy-badge--autonomy">{{ doc.autonomy | replace: "-", " " }}</span>
+      <span class="taxonomy-badge taxonomy-badge--autonomy">
+        {% if doc.autonomy == "exercise" %}learning{% else %}{{ doc.autonomy | replace: "-", " " }}{% endif %}
+      </span>
+    {% endif %}
+    {% if doc.tags contains "Kaggle" %}
+      <span class="taxonomy-badge taxonomy-badge--kaggle">kaggle</span>
     {% endif %}
     {% if doc.stage %}
       <span class="taxonomy-badge taxonomy-badge--stage">{{ doc.stage }}</span>

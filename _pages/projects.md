@@ -15,7 +15,7 @@ header:
 
 Travaux pratiques en optimisation, analyse spatiale et data engineering.
 
-## By domain
+## Par domaine
 
 - [Data Science]({{ "/categories/data-science/" | relative_url }})
 - [Geospatial]({{ "/categories/geospatial/" | relative_url }})
@@ -23,8 +23,10 @@ Travaux pratiques en optimisation, analyse spatiale et data engineering.
 - [Optimization]({{ "/categories/optimization/" | relative_url }})
 - [Energy Modeling]({{ "/categories/energy-modeling/" | relative_url }})
 
-<h2 id="browse-by-taxonomy">Browse by taxonomy</h2>
+{% include projects-filter.html %}
 
-{% include project-tag-cloud.html %}
+<h2 id="browse-by-taxonomy">Stage & technologies</h2>
+
+{% include project-tag-cloud.html hide_autonomy=true %}
 
 <p class="projects-footer">Suivi d'avancement : <a href="{{ '/progress/' | relative_url }}">progress dashboard</a></p>

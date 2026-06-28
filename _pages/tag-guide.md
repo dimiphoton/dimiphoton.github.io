@@ -32,7 +32,7 @@ Project hubs filtered by domain: [/projects/](/projects/).
 
 How independently the work was carried out:
 
-- `exercise` — guided learning exercise (coursework, tutorial)
+- `exercise` — guided learning exercise (affiché **learning** sur le site)
 - `little-experiment` — small independent exploration (weekend project, quick POC)
 - `solo-project` — fully independent portfolio project
 
