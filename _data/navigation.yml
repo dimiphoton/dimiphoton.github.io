@@ -25,6 +25,8 @@ writing:
     children:
       - title: "All notes"
         url: /writing/
+      - title: "How-to"
+        url: /how-to/
       - title: "Post guide"
         url: /post-guide/
       - title: "Taxonomy"
