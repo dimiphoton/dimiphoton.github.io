@@ -15,7 +15,7 @@ layout: archive
   {% assign other_projects = all_projects | where_exp: "p", "p.featured != true" | sort: "title" %}
   {% assign sorted_projects = featured_projects | concat: other_projects %}
   {%- for post in sorted_projects -%}
-    {% include archive-single.html type=grid highlight_featured=true %}
+    {% include archive-single.html type='grid' highlight_featured=true %}
   {%- endfor -%}
 </div>
 

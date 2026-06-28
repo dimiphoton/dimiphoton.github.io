@@ -12,7 +12,7 @@
 
 {% capture tag_slugs %}{% if post.tags %}{% for t in post.tags %}{{ t | slugify }} {% endfor %}{% endif %}{% endcapture %}
 
-<div class="{{ include.type | default: 'list' }}__item{% if post.featured and include.highlight_featured %} project-card--featured{% endif %}"
+<div class="{{ include.type | default: 'list' }}__item project-grid-card{% if post.featured and include.highlight_featured %} project-card--featured{% endif %}"
   {% if post.autonomy %}data-autonomy="{{ post.autonomy }}"{% endif %}
   {% if post.stage %}data-stage="{{ post.stage }}"{% endif %}
   data-tags="{{ tag_slugs | strip }}">
@@ -30,6 +30,9 @@
       </div>
     {% endif %}
     <div class="archive__item-body">
+      {% if post.featured and include.highlight_featured %}
+        <span class="project-featured-badge project-featured-badge--label">★ Sélection</span>
+      {% endif %}
       {% if post.categories and include.show_category != false %}
         {% assign note_type = post.categories | first %}
         <span class="note-type-badge note-type-badge--{{ note_type }}">{{ note_type }}</span>

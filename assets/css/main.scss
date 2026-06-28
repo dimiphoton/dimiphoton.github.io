@@ -760,8 +760,8 @@ search: false
 }
 
 .project-card--featured .archive__item {
-  border-color: var(--accent, #1a365d);
-  box-shadow: 0 4px 16px rgba(26, 54, 93, 0.15);
+  border: 2px solid var(--accent, #1a365d);
+  box-shadow: 0 6px 20px rgba(26, 54, 93, 0.18);
 }
 
 .project-featured-badge {
@@ -776,6 +776,14 @@ search: false
   padding: 0.25em 0.55em;
   border-radius: 4px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+
+  &--label {
+    position: static;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    background: var(--accent, #1a365d);
+    color: #fff;
+  }
 }
 
 .projects-filter__btn--inline {

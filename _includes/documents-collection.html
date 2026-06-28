@@ -9,5 +9,5 @@
 {% endif %}
 
 {%- for post in entries -%}
-  {% include archive-single.html type=include.type %}
+  {% include archive-single.html type=include.type highlight_featured=include.highlight_featured show_category=include.show_category %}
 {%- endfor -%}
