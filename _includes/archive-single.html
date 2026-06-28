@@ -19,9 +19,6 @@
   <article class="archive__item{% if post.domain %} archive__item--has-domain{% endif %}" itemscope itemtype="https://schema.org/CreativeWork"{% if post.locale %} lang="{{ post.locale }}"{% endif %}>
     {% if include.type == "grid" or include.type == "featured" %}
       <div class="archive__item-teaser{% unless teaser %} archive__item-teaser--placeholder domain-{{ post.domain | default: 'default' }}{% endunless %}">
-        {% if post.featured and include.highlight_featured %}
-          <span class="project-featured-badge">★ Sélection</span>
-        {% endif %}
         {% if teaser %}
           <img src="{{ teaser | relative_url }}" alt="">
         {% elsif post.domain %}

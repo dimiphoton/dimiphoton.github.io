@@ -12,10 +12,12 @@ classes:
     <h2>Projets sélectionnés</h2>
     <a href="{{ '/projects/' | relative_url }}" class="home-section__link">Tous les projets →</a>
   </div>
-  <div class="grid__wrapper home-projects__grid">
+  <div class="home-projects__grid">
     {% assign home_projects = site.projects | where: "featured", true | sort: "title" %}
     {% if home_projects.size == 0 %}
       {% assign home_projects = site.projects | sort: 'title' | reverse | limit: 3 %}
+    {% else %}
+      {% assign home_projects = home_projects | limit: 3 %}
     {% endif %}
     {% include documents-collection.html entries=home_projects type='grid' highlight_featured=true %}
   </div>
