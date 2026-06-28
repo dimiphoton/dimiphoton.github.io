@@ -7,6 +7,7 @@ domain: data-science
 autonomy: little-experiment
 stage: notebook
 status: done
+featured: true
 tags:
   - Python
   - Kaggle

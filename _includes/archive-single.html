@@ -10,10 +10,18 @@
   {% assign title = post.title %}
 {% endif %}
 
-<div class="{{ include.type | default: 'list' }}__item"{% if post.autonomy %} data-autonomy="{{ post.autonomy }}"{% endif %}{% if post.tags %} data-tags="{{ post.tags | join: ' ' }}"{% endif %}>
+{% capture tag_slugs %}{% if post.tags %}{% for t in post.tags %}{{ t | slugify }} {% endfor %}{% endif %}{% endcapture %}
+
+<div class="{{ include.type | default: 'list' }}__item{% if post.featured and include.highlight_featured %} project-card--featured{% endif %}"
+  {% if post.autonomy %}data-autonomy="{{ post.autonomy }}"{% endif %}
+  {% if post.stage %}data-stage="{{ post.stage }}"{% endif %}
+  data-tags="{{ tag_slugs | strip }}">
   <article class="archive__item{% if post.domain %} archive__item--has-domain{% endif %}" itemscope itemtype="https://schema.org/CreativeWork"{% if post.locale %} lang="{{ post.locale }}"{% endif %}>
     {% if include.type == "grid" or include.type == "featured" %}
       <div class="archive__item-teaser{% unless teaser %} archive__item-teaser--placeholder domain-{{ post.domain | default: 'default' }}{% endunless %}">
+        {% if post.featured and include.highlight_featured %}
+          <span class="project-featured-badge">★ Sélection</span>
+        {% endif %}
         {% if teaser %}
           <img src="{{ teaser | relative_url }}" alt="">
         {% elsif post.domain %}

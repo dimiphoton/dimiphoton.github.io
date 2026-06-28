@@ -1,0 +1,24 @@
+---
+layout: archive
+---
+
+{{ content }}
+
+{% include projects-filter.html %}
+
+<h2 id="browse-by-taxonomy" class="projects-section-title">Filtrer par stage & technologies</h2>
+{% include project-tag-cloud.html hide_autonomy=true %}
+
+<div class="entries-grid projects-grid" id="projects-grid">
+  {% assign all_projects = site.projects | where_exp: "p", "p.hidden != true" %}
+  {% assign featured_projects = all_projects | where: "featured", true | sort: "title" %}
+  {% assign other_projects = all_projects | where_exp: "p", "p.featured != true" | sort: "title" %}
+  {% assign sorted_projects = featured_projects | concat: other_projects %}
+  {%- for post in sorted_projects -%}
+    {% include archive-single.html type=grid highlight_featured=true %}
+  {%- endfor -%}
+</div>
+
+<p class="projects-footer">Suivi d'avancement : <a href="{{ '/progress/' | relative_url }}">progress dashboard</a></p>
+
+{% include projects-filter-script.html %}

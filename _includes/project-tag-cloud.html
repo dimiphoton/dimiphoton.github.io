@@ -27,7 +27,7 @@
     <div class="tag-group stage-tags">
       {% for stage in stages %}
         <span class="tag-item stage-tag">
-          <a href="{{ '/progress/' | relative_url }}">{{ stage }}</a>
+          <button type="button" class="projects-filter__btn projects-filter__btn--inline" data-filter="stage:{{ stage }}">{{ stage }}</button>
         </span>
       {% endfor %}
     </div>
@@ -40,7 +40,7 @@
         {% if tag != "" %}
           {% assign tag_slug = tag | slugify %}
           <span class="tag-item tech-tag">
-            <a href="{{ '/tags/' | append: tag_slug | append: '/' | relative_url }}">{{ tag }}</a>
+            <button type="button" class="projects-filter__btn projects-filter__btn--inline" data-filter="tag:{{ tag_slug }}">{{ tag }}</button>
           </span>
         {% endif %}
       {% endfor %}

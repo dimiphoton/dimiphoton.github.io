@@ -53,6 +53,17 @@ Current state of the project or progress note:
 - `wip` — work in progress
 - `done` — completed at the current stage
 
+## Featured (`featured`)
+
+Set `featured: true` on a project hub to highlight it:
+
+- Sorted first on [/projects/](/projects/) with a **★ Sélection** badge
+- Shown in the featured block on the [home page](/)
+
+```yaml
+featured: true
+```
+
 ## Project link (`project_id`)
 
 A slug shared between the project hub in `_projects/` and related notes in `_posts/`.

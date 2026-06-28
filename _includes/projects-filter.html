@@ -5,30 +5,3 @@
   <button type="button" class="writing-filter__btn projects-filter__btn" data-filter="little-experiment">Week-end</button>
   <button type="button" class="writing-filter__btn projects-filter__btn" data-filter="kaggle">Kaggle</button>
 </nav>
-
-<script>
-(function () {
-  var buttons = document.querySelectorAll(".projects-filter__btn");
-  var items = document.querySelectorAll(".entries-grid .grid__item");
-
-  function applyFilter(filter) {
-    buttons.forEach(function (b) {
-      b.classList.toggle("is-active", b.getAttribute("data-filter") === filter);
-    });
-    items.forEach(function (item) {
-      var autonomy = item.getAttribute("data-autonomy") || "";
-      var tags = (item.getAttribute("data-tags") || "").toLowerCase();
-      var show = filter === "all"
-        || (filter === "kaggle" && tags.indexOf("kaggle") !== -1)
-        || autonomy === filter;
-      item.style.display = show ? "" : "none";
-    });
-  }
-
-  buttons.forEach(function (btn) {
-    btn.addEventListener("click", function () {
-      applyFilter(btn.getAttribute("data-filter"));
-    });
-  });
-})();
-</script>

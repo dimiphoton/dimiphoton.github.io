@@ -1,10 +1,8 @@
 ---
 title: "Projects"
-layout: collection
-collection: projects
+layout: projects-collection
 permalink: /projects/
 author_profile: true
-entries_layout: grid
 classes:
   - wide
 header:
@@ -15,6 +13,8 @@ header:
 
 Travaux pratiques en optimisation, analyse spatiale et data engineering.
 
+Les projets **★ Sélection** sont mis en avant via `featured: true` — en tête de liste et sur l'[accueil](/).
+
 ## Par domaine
 
 - [Data Science]({{ "/categories/data-science/" | relative_url }})
@@ -22,11 +22,3 @@ Travaux pratiques en optimisation, analyse spatiale et data engineering.
 - [MLOps]({{ "/categories/mlops/" | relative_url }})
 - [Optimization]({{ "/categories/optimization/" | relative_url }})
 - [Energy Modeling]({{ "/categories/energy-modeling/" | relative_url }})
-
-{% include projects-filter.html %}
-
-<h2 id="browse-by-taxonomy">Stage & technologies</h2>
-
-{% include project-tag-cloud.html hide_autonomy=true %}
-
-<p class="projects-footer">Suivi d'avancement : <a href="{{ '/progress/' | relative_url }}">progress dashboard</a></p>
